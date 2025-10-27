@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        acks: all
+        retries: 3
+        spring.json.add.type.headers: true
+        spring.json.type.mapping: DroneDto:com.example.data_collector.dto.DroneDto
+    topic:
+      drone: drone-topic
