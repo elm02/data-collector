@@ -6,7 +6,6 @@
 - Java 17
 - Spring Boot 
 - Apache Kafka
-- Spring Validation
 
 ## Возможности
 - Прием данных о БПЛА через REST API
@@ -29,4 +28,4 @@
 
 `mvn spring-boot:run`
 
-Доступ осуществляется по адресу http://localhost:8089/api/drones
+Доступ осуществляется по адресу http://localhost:8080/api/drones
